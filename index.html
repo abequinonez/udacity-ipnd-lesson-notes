@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Abraham's Notes</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<!-- This is the main header for the entire page. -->
+		<div id="header">
+
+			<!-- Computer icon created in photoshop from traced screenshot -->
+			<img src="computer-icon.png" alt="Picture of computer">
+			<h1>Summary of Notes: Stages 0-1</h1>
+		</div>
+		<!-- End of main header -->
+
+		<!-- Beginning of Table of Contents -->
+		<div class="content-window">
+			<h2><span class="content-heading">Table of Contents</span></h2>
+
+			<div>
+
+				<!-- Table containing the actual Table of Contents -->
+				<table>
+					<tr>
+
+						<!-- Folder icon created in photoshop from traced screenshot -->
+						<th><a href="#lesson1"><img src="folder-icon.png" alt="Picture of a folder"></a></th>
+						<th><a href="#lesson2"><img src="folder-icon.png" alt="Picture of a folder"></a></th>
+						<th><a href="#lesson3"><img src="folder-icon.png" alt="Picture of a folder"></a></th>
+					</tr>
+					<tr>
+						<th><a href="#lesson1">Lesson 1</a></th>
+						<th><a href="#lesson2">Lesson 2</a></th>
+						<th><a href="#lesson3">Lesson 3</a></th>
+					</tr>
+					<tr>
+						<td><a href="#theweb">1.1 The Web</a></td>
+						<td><a href="#structure">2.1 Structure of Websites</a></td>
+						<td><a href="#css">3.1 CSS</a></td>
+					</tr>
+					<tr>
+						<td><a href="#html">1.2 HTML</a></td>
+						<td><a href="#developer">2.2 Developer Tools</a></td>
+						<td><a href="#css-components">3.2 CSS Components</a></td>
+					</tr>
+					<tr>
+						<td><a href="#computers">1.3 Computers Interpret Language Literally</a></td>
+						<td><a href="#boxes">2.3 Boxes and Grids</a></td>
+						<td><a href="#classes">3.3 Classes and IDs</a></td>
+					</tr>
+					<tr>
+						<td><a href="#inline">1.4 Inline VS Block</a></td>
+						<td><a href="#design">2.4 Design Mockup to HTML</a></td>
+						<td><a href="#external">3.4 External VS &lt;style&gt; VS Inline</a></td>
+					</tr>
+					<tr>
+						<td><a href="#document">1.5 Document Structure</a></td>
+						<td></td>
+						<td><a href="#box-model">3.5 Break Down of the Box Model</a></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><a href="#code">3.6 Code, Test, and Refine</a></td>
+					</tr>
+				</table>
+				<!-- End of table containing the actual Table of Contents -->
+
+			</div>
+		</div>
+		<!-- End of Table of Contents -->
+
+		<!-- This is the beginning of lesson 1. I placed all of the lesson 1 content into the following div element. -->
+		<div id="lesson1" class="content-window">
+			<h2><span class="content-heading">Lesson 1: Introduction to the Web and HTML</span></h2>
+
+			<!-- This is the beginning of the first concept "The Web" -->
+			<div id="theweb">
+				<h3>The Web</h3>
+				<p>
+					<span class="definition">The web is a collection of HTML documents, images, videos, and other files.</span> The bulk of these files is made up of the actual HTML documents, which can link to other files, including other HTML documents, thus explaining how the web earns its name.
+				</p>
+				<p>
+					A user participates in the web through the browser. The HTML documents and files of the web are hosted on servers. In order to retrieve these files, the browser makes an HTTP request to the servers via the internet.
+				</p>
+				<p>
+					Here is an image that demonstrates this process:<br>
+					<img src="http://2.bp.blogspot.com/-SAfZ01aUf_A/ViKFmUXCLII/AAAAAAAAAO8/7sVo2DMd2Cs/s1600/WebBrowser-WebServer.gif" alt="Picture of HTTP request">
+				</p>
+			</div>
+			<!-- End of "The Web" concept -->
+
+			<!-- This is the beginning of the "HTML" concept -->
+			<div id="html">
+				<h3>HTML</h3>
+				<p>
+					HTML stands for <em>HyperText Markup Language</em>. It is made up of text content (what you see), markup (what it looks like), references to other documents (such as images and videos), and links to other pages. Plain text entered into an HTML document will usually be rendered as plain text by the browser. To make any changes to the way plain text is presented or arranged, markup in the form of HTML tags and elements must be used.
+				</p>
+				<p>
+					<span class="definition">An element is basically a set of HTML tags surrounding some visible content.</span> With a few exceptions, only the content is rendered by the browser. The tags themselves merely dictate how the content should be displayed or arranged. Some elements have no content, and thus have no closing tag as well. These are called void elements.
+				</p>
+				<p>
+					<a href="http://www.w3schools.com/html/html_elements.asp">Here</a> is an overview of HTML elements from w3schools.com.
+				</p>
+			</div>
+			<!-- End of "HTML" concept -->
+
+			<!-- Beginning of "Computers Interpret Language Literally" concept -->
+			<div id="computers">
+				<h3>Computers Interpret Language Literally</h3>
+				<p>
+					Computers are often called "stupid" by programmers because unlike humans, computers cannot interpret ambiguous language. They can only interpret language literally. Therefore, a minor mistake, which a human could easily correct, could be disastrous for a computer.
+				</p>
+				<p>
+					In HTML, forgetting to include a closing tag at the end of an element that requires one could have unintended consequences. Most commonly, an HTML element without a closing tag could cause its effect to continue until the end of the document. So, instead of only a single word being emphasized, the entire document could end up being emphasized. Again, this is because the computer cannot infer upon the programmer's true intentions.
+				</p>
+			</div>
+			<!-- End of "Computers Interpret Language Literally" concept -->
+
+			<!-- Beginning of "Inline VS Block" concept -->
+			<div id="inline">
+				<h3>Inline VS Block</h3>
+				<p>
+					HTML elements are either <em>inline</em> or <em>block</em>. <span class="definition">Inline elements are just text (or images) that often continue with the flow of the text on the current line.</span> <span class="definition">Block elements, on the other hand, are essentially invisible boxes or blocks that are stacked on top of each other.</span>
+				</p>
+				<p>
+					Container elements, which serve no other purpose than to contain nested elements, are also either inline or block. The span element is inline, while the div element is block. These containers can wrap up code that can then be easily styled with CSS.
+				</p>
+			</div>
+			<!-- End of "Inline VS Block" concept -->
+
+			<!-- Beginning of "Document Structure" concept -->
+			<div id="document">
+				<h3>Document Structure</h3>
+				<p>
+					Given the severe consequences that minor mistakes may cause, HTML document structure should be organized in a way that promotes readability. For this reason, HTML code is indented, similar to how English is indented in a paragraph essay. Unlike English, however, an indentation level in HTML, as in programming languages, persists throughout an idea.
+				</p>
+				<p>
+					Every HTML document begins with a document type declaration. It is then followed by the html, head, and body elements. The html element contains the entire document. The head element contains the document's meta data. The body element contains the visible content and makes up the bulk of the document.
+				</p>
+			</div>
+			<!-- End of "Document Structure" concept -->
+
+		</div>
+		<!-- End of lesson 1 -->
+
+		<!-- Beginning of lesson 2. All of lesson 2 content is nested in the following div element. -->
+		<div id="lesson2" class="content-window">
+			<h2><span class="content-heading">Lesson 2: Creating a Structured Document</span></h2>
+
+			<!-- Beginning of first concept "Structure of Web Pages" -->
+			<div id="structure">
+				<h3>Structure of Websites</h3>
+				<p>
+					<span class="important">Websites are broken down into three main components, each represented by a different language: <em>HTML</em> for structure, <em>CSS</em> for style, and <em>Javascript</em> for behavior.</span> Each of these languages makes up the rules for how websites can be built and structured.
+				</p>
+				<p>
+					<span class="important">Much like a file directory, the browser builds a tree-like structure of an HTML document.</span> Elements are nested within other elements, which ends up looking like an upside-down tree with the root at the top and nested elements branching down. This tree-like structure representation of the website by the browser is known as the DOM (Document Object Model).
+				</p>
+				<p>
+					Here is an image that visualizes this tree-like structure:<br>
+					<img src="https://qph.ec.quoracdn.net/main-qimg-fcfebff81e40dfadcd7d03d4b897aac3" alt="Visualization of DOM tree-like structure">
+				</p>
+			</div>
+			<!-- End of first concept "Structure of Websites" -->
+
+			<!-- Beginning of "Developer Tools" concept -->
+			<div id="developer">
+				<h3>Developer Tools</h3>
+				<p>
+					Using developer tools, such as those provided in Google Chrome and other modern browsers, developers can identify the structure of a website. An excellent learning tool, developer tools can reveal the DOM of a website. With this, developers can make temporary changes to a website's content and structure. Moreover, highlighting an element in the developer tools will reveal its corresponding position and presentation on the actual website.
+				</p>
+				<P>
+					Click <a href="https://developers.google.com/web/tools/chrome-devtools/">here</a> for an in-depth overview of Google Chrome's developer tools.
+				</P>
+			</div>
+			<!-- End of "Developer Tools" concept -->
+
+			<!-- Beginning of "Boxes and Grids" concept -->
+			<div id="boxes">
+				<h3>Boxes and Grids</h3>
+				<p>
+					Using developer tools, it is made clear that websites are based around boxes and grids. <span class="important">In fact, every element, including those that appear to be circles, are actually just boxes.</span> The appearance of a non-box element is the result of using a style. The box-based nature of websites helps developers make changes to existing layouts. A grid lies underneath and makes sure that everything is aligned properly.
+				</p>
+			</div>
+			<!-- End of "Boxes and Grids" concept -->
+
+			<!-- Beginning of "Design Mockup to HTML" concept -->
+			<div id="design">
+				<h3>Design Mockup to HTML</h3>
+				<p>
+					With the boxed-based nature of websites in mind, a developer can take a design mockup and convert it to an HTML document. First, with a variety of options, a mockup is boxified; boxes are drawn around every visual element of the design. Next, using container elements, such as the div element, the boxified mockup is translated to HTML.
+				</p>
+			</div>
+			<!-- End of "Design Mockup to HTML" concept -->
+
+		</div>
+		<!-- End of lesson 2 -->
+
+		<!-- Beginning of lesson 3. All of lesson 3 content is nested in the following div element. -->
+		<div id="lesson3" class="content-window">
+			<h2><span class="content-heading">Lesson 3: Adding CSS Style and HTML Structure</span></h2>
+
+			<!-- Beginning of first concept "CSS" -->
+			<div id="css">
+				<h3>CSS</h3>
+				<p>
+					CSS stands for <em>Cascading Style Sheets</em>. It is the language that applies styles to HTML documents. In this context, styles refers to presentation or appearance. Using CSS, a user can rearrange elements, change colors, change fonts and font sizes, etc. One of the biggest advantages of using CSS is that it helps keep structure and content separate from each other.
+				</p>
+				<p>
+					CSS earns its name from the fact that it is made up of style rules that cascade from general rules to the most specific rule. This is because CSS can receive style rules from different sources, such as the browser default style sheets, inline style sheets, external style sheets, and so on.
+				</p>
+			</div>
+			<!-- End of first concept "CSS" -->
+
+			<!-- Beginning of "CSS Components" concept -->
+			<div id="css-components">
+				<h3>CSS Components</h3>
+				<p>
+					CSS style rules are made up of selectors, properties, and values. Selectors are the elements that are targeted by the style rules. These are commonly the elements themselves, classes, or IDs. In defining a style rule, a selector is then followed by a pair of curly braces which contains one or more sets of a properties and corresponding values.
+				</p>
+				<p>
+					A style rule can be defined for multiple selectors. Multiple elements with a desired similar style can be grouped into classes in HTML. Then, in CSS, these elements can be selected by class and styled together. One of the biggest advantages of this strategy is the prevention or reduction of repetition.
+				</p>
+			</div>
+			<!-- End of "CSS Components" concept -->
+
+			<!-- Beginning of "Classes and IDs" concept -->
+			<div id="classes">
+				<h3>Classes and IDs</h3>
+				<p>
+					In HTML, elements can be assigned a class or ID. <span class="important">A class groups elements into a similar category, while an ID acts as a unique identifier.</span> For this reason, only classes should be used for grouping together multiple elements. IDs should only be used for a single element. In CSS, the elements grouped into a class or ID can then be selected and targeted for a style rule.
+				</p>
+			</div>
+			<!-- End of "Classes and IDs" concept -->
+
+			<!-- Beginning of "External VS <style> VS Inline" concept -->
+			<div id="external">
+				<h3>External VS &lt;style&gt; VS Inline</h3>
+				<p>
+					There are three ways of adding CSS code to a web page. First, CSS can be added by using an external CSS file. Using this method, a &lt;link&gt; tag is added inside of the &lt;head&gt; element of the HTML document with a link to the CSS file. This is the recommended method, since it provides site-wide organization and ease of maintenance, especially with larger projects.
+				</p>
+				<p>
+					The second method for adding CSS code to a web page is by using the &lt;style&gt; element in the HTML document. The CSS code is then added within this element, just as it would be written in an external file. This method is appropriate for testing and small projects, but can lead to maintenance and repetition issues as a site expands or changes.
+				</p>
+				<p>
+					The third method for adding CSS code to a web page is by writing the style inline with the HTML. Using this method, a style attribute is added to the desired HTML element. Thus, style must be added for every individual element. This is the least recommended method for adding CSS code to a web page, for it introduces the potential of worst-case scenario maintenance and efficiency problems.
+				</p>
+			</div>
+			<!-- End of "External VS <style> VS Inline" concept -->
+
+			<!-- Beginning of "Break Down of the Box Model" concept -->
+			<div id="box-model">
+				<h3>Break Down of the Box Model</h3>
+				<p>
+					<span class="important">Every HTML element is a box made up of certain properties: the content itself, padding, border, and margin.</span> At the center of this box is the content which is surrounded or padded by the padding. The border then encapsulates both the padding and the content. Finally, on the outside, the margin provides space around the box. These properties may be modified using CSS.
+				</p>
+				<p>
+					Here is an image that illustrates the various parts of the box model:<br>
+					<img src="https://www.codeproject.com/KB/HTML/567385/boxmodel-image.png" alt="Picture of box model">
+				</p>
+			</div>
+			<!-- End of "Break Down of the Box Model" concept -->
+
+			<!-- Beginning of "Code, Test, and Refine" concept -->
+			<div id="code">
+				<h3>Code, Test, and Refine</h3>
+				<p>
+					When coding, a useful strategy for reaching a final product is to code, test, and refine. Apart from boxifying and translating a design mockup to HTML, code is first written, much like a rough draft for a document, as an initial attempt at reaching a final product. Next, code is tested using a variety of methods. For example, in the context of developing a web page, the page can be tested by resizing the window, clicking on links, and using different browsers. Finally, code is refined by making changes that get the initial version closer to the final product.
+				</p>
+			</div>
+			<!-- End of "Code, Test, and Refine" concept -->
+
+		</div>
+		<!-- End of lesson 3 -->
+
+	</body>
+</html>

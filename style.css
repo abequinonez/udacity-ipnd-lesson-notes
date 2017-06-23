@@ -1,0 +1,116 @@
+/* CSS code for index.html */
+
+/* Use of CSS3 web fonts described at w3schools.com */
+/* Source of font: http://www.fontspace.com/casady-and-greene/chicagoflf */
+@font-face {
+	font-family: chicagoFLF;
+	src: url(chicagoflf.ttf);
+}
+
+body {
+	max-width: 80%;
+	margin: 0 auto;
+
+	/* CSS background pattern created at http://www.patternify.com/ */
+	background-image: url("pattern.png");
+
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 15px;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	text-indent: 10px;
+}
+
+#header, .content-window {
+	background-color: white;
+	border: 1px solid black;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 15px;
+}
+
+#header {
+	border-radius: 20px 20px 0px 0px;
+	margin-top: 15px;
+	/*margin-bottom: 15px;*/
+	height: 60px;
+
+	/* Flexbox used to vertically center header text */
+	/* Older and additional browser support included */
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+#header img {
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.content-window {
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+.content-window h2 {
+
+	/* Pattern created in Photoshop. Based on existing image found online */
+	/* This background will lay underneath the heading text */
+	background-image: url("heading-bg.png");
+	background-position: center center;
+	text-align: center;
+}
+
+.content-heading {
+
+	/* Make the heading text background white */
+	background-color: white;
+	padding: 10px;
+}
+
+h1, h2, h3, th {
+
+	/* All headings (including table headers) will use this custom font */
+	font-family: chicagoFLF, "Times New Roman", Times, serif;
+}
+
+h3, th, td {
+
+	/* Only the h3, th, and td elements are underlined */
+	text-decoration: underline;
+}
+
+p, td {
+
+	/* Paragraph text and td elements use a different font and text style */
+	font-family: helvetica, arial, sans-serif;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+/* The .definition and .important classes will have distinct text styles */
+.definition {
+	background-color: #DCDCDC;
+	letter-spacing: 1px;
+}
+
+.important {
+	font-weight: bold;
+	color: #36454F;
+	font-style: italic;
+}
